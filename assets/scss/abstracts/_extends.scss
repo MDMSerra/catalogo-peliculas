@@ -1,0 +1,11 @@
+%hover-scale{
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+%hover-color{
+    &:hover{
+        color: map-get($colors, light-red);
+    }
+}

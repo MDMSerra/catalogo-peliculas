@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Catálogo de películas online, en este sitio podrás ver un listado de las películas mejor valoradas">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Peliculas.com</title>
+</head>
+
+<body>
+    <!-- inicio del encabezado -->
+    <header class="header">
+        <!-- inicio de la barra de navegación -->
+        <div class="menu container">
+            <div class="logo">
+                <img src="assets/img/logo-2.svg" alt="Paramar logo">
+            </div>
+
+            <input type="checkbox"  id="menu" />
+            <label for="menu" class="menu-label">
+                <img src="assets/img/menu.png" alt="menu" class="menu-icon">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Películas</a></li>
+                    <li><a href="#">Añadido recientemente</a></li>
+                    <li><a href="#">Mi lista</a></li>
+                    <li><a href="#" class="login-burger">Login</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-1 btn">Login</a>
+        </div>
+        <!-- fin de la barra de navegación -->
+
+
+        <!-- inicio del contenido del encabezado, sección del registro -->
+        <div class="header-content container">
+            <div class="header-1">
+                <h1>Catalogo de películas</h1>
+            </div>
+            <div class="header-2">
+                <h2>Descubre cuáles son las últimas tendencias en películas</h2>
+            </div>
+            <div>
+                <a href="#" class="btn-2 btn">Registrarse</a>
+            </div>
+
+            <!-- inicio de buscador de peliculas -->
+        </div>
+        <div class="header-search container">
+            <h2 class="search-title">¿Estás buscando alguna película?</h2>
+            <input class="search__input" type="text" placeholder="Buscar...">
+            <button class="search__button">Buscar</button>
+        </div>
+    </header>
+    <!-- fin del encabezado -->
+
+    <!-- inicio del main -->
+    <main>
+        
+
+        <!-- inicio del container de peliculas mas vistas -->
+        <section class="movies container">
+            <h2>Películas más vistas</h2>
+            <hr>
+            <div class="box-container-1">
+                <div class="box-1">
+                    <div class="content">
+                        <img src="assets/img/1.jpg" alt="caratula película Iron Man 3">
+                        <h3 class="movie-title">Iron Man 3</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <div class="content">
+                        <img src="assets/img/2.jpg" alt="caratula película Thor Love and Thunder">
+                        <h3 class="movie-title">Thor Love and Thunder</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <div class="content">
+                        <img src="assets/img/3.jpg" alt="caratula película Thor Ragnarok">
+                        <h3 class="movie-title">Thor Ragnarok</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <div class="content">
+                        <img src="assets/img/4.jpg" alt="caratula película Resident Evil Bienvenidos a Racoon City">
+                        <h3 class="movie-title">Resident Evil Bienvenidos a Racoon City</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <div class="content">
+                        <img src="assets/img/5.jpg" alt="caratula película La vieja guardia">
+                        <h3 class="movie-title">La vieja guardia</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <div class="content">
+                        <img src="assets/img/6.jpg" alt="caratula película Spectral">
+                        <h3 class="movie-title">Spectral</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <div class="content">
+                        <img src="assets/img/7.jpg" alt="caratula película 300 Origen de un Imperio">
+                        <h3 class="movie-title">300 Origen de un Imperio</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-1">
+                    <div class="content">
+                        <img src="assets/img/8.jpg" alt="caratula película Project Power">
+                        <h3 class="movie-title">Project Power</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more btn" id="load-more-1">Cargar más</div>
+        </section>
+
+        <section class="movies container">
+            <h2>Películas de Acción</h2>
+            <hr>
+            <div class="box-container-2">
+                <div class="box-2">
+                    <div class="content">
+                        <img src="assets/img/9.jpg" alt="caratula película Venom">
+                        <h3 class="movie-title">Venom Carnage</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <div class="content">
+                        <img src="assets/img/10.jpg" alt="caratula película Venom">
+                        <h3 class="movie-title">Venom</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <div class="content">
+                        <img src="assets/img/11.jpg" alt="caratula película Spiderman">
+                        <h3 class="movie-title">Spiderman no way home</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <div class="content">
+                        <img src="assets/img/12.jpg" alt="caratula película Avengers Infinity War">
+                        <h3 class="movie-title">Avengers Infinity War</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <div class="content">
+                        <img src="assets/img/13.jpg" alt="caratula película Avengers">
+                        <h3 class="movie-title">Avengers End Game</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <div class="content">
+                        <img src="assets/img/14.jpg" alt="caratula película Mad Max">
+                        <h3 class="movie-title">Mad Max, Fury road</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <div class="content">
+                        <img src="assets/img/15.jpg" alt="caratula película Duro de matar">
+                        <h3 class="movie-title">Duro de matar 4.0</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <div class="content">
+                        <img src="assets/img/16.jpg" alt="caratula película Duro de matar">
+                        <h3 class="movie-title">Duro de matar, un buen día para morir</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more btn-4 btn" id="load-more-2">Cargar más</div>
+        </section>
+
+        <section class="movies container">
+            <h2>Películas de Estreno</h2>
+            <hr>
+            <div class="box-container-3">
+                <div class="box-3">
+                    <div class="content">
+                        <img src="assets/img/17.jpg" alt="caratula película Life">
+                        <h3 class="movie-title">Life</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-3">
+                    <div class="content">
+                        <img src="assets/img/18.jpg" alt="caratula película Morbius">
+                        <h3 class="movie-title">Morbius</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-3">
+                    <div class="content">
+                        <img src="assets/img/19.jpg" alt="caratula película WandaVision">
+                        <h3 class="movie-title">WandaVision</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-3">
+                    <div class="content">
+                        <img src="assets/img/20.jpg" alt="caratula película Batman">
+                        <h3 class="movie-title">Batman</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-3">
+                    <div class="content">
+                        <img src="assets/img/21.jpg" alt="caratula película Bohemian Rhapsody">
+                        <h3 class="movie-title">Bohemian Rhapsody</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-3">
+                    <div class="content">
+                        <img src="assets/img/22.jpg" alt="caratula película Star Wars">
+                        <h3 class="movie-title">Star Wars, Rogue One</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-3">
+                    <div class="content">
+                        <img src="assets/img/23.jpg" alt="caratula película Black widow">
+                        <h3 class="movie-title">Black Widow</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-3">
+                    <div class="content">
+                        <img src="assets/img/24.jpg" alt="caratula película Black Adam">
+                        <h3 class="movie-title">Black Adam</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more btn-5 btn" id="load-more-3">Cargar más</div>
+        </section>
+    </main>
+    <!-- fin del main -->
+
+    <!-- inicio del pie de página -->
+    <footer class="footer container">
+        <h3>Paramar</h3>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Películas</a></li>
+            <li><a href="#">Añadido recientemente</a></li>
+            <li><a href="#">Mi lista</a></li>
+        </ul>
+    </footer>
+    <!-- fin del pie de página -->
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>

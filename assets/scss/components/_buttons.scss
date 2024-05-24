@@ -1,0 +1,8 @@
+.btn{
+    background-color: map-get($colors, light-red );
+    font-size: 30px;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 30px;
+    @extend %hover-scale;
+}
