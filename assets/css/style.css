@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-.btn, .header .menu .navbar ul li, .header .menu .logo img {
+.btn, .menu .navbar ul li, .menu .logo img {
   transition: 0.3s;
 }
-.btn:hover, .header .menu .navbar ul li:hover, .header .menu .logo img:hover {
+.btn:hover, .menu .navbar ul li:hover, .menu .logo img:hover {
   transform: scale(1.05);
 }
 
-.footer ul li a:hover, .header .menu .navbar ul li a:hover {
+.footer ul li a:hover, .menu .navbar ul li a:hover {
   color: crimson;
 }
 
@@ -25,80 +25,87 @@ body {
   background-color: #0D0D0D;
 }
 
+#form-container {
+  font-family: "Poppins", sans-serif;
+}
+#form-container .form form {
+  background-color: aquamarine;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.header .menu {
+.menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-width: 1200px) {
-  .header .menu {
+  .menu {
     width: 90%;
   }
 }
 @media screen and (max-width: 1000px) {
-  .header .menu {
+  .menu {
     width: 100%;
   }
 }
-.header .menu .logo {
+.menu .logo {
   overflow: hidden;
   height: 100px;
 }
-.header .menu .logo img {
+.menu .logo img {
   background-color: crimson;
   width: 150px;
   height: 100px;
   padding: 0 15px;
   object-fit: cover;
 }
-.header .menu .menu-icon {
+.menu .menu-icon {
   width: 25px;
 }
-.header .menu .menu-label {
+.menu .menu-label {
   cursor: pointer;
   display: none;
 }
 @media screen and (max-width: 1000px) {
-  .header .menu .menu-label {
+  .menu .menu-label {
     display: initial;
     margin-right: 25px;
   }
 }
-.header .menu .navbar ul li {
+.menu .navbar ul li {
   display: inline-block;
   padding: 0 20px;
 }
-.header .menu .navbar ul li .login-burger {
+.menu .navbar ul li .login-burger {
   display: none;
 }
 @media screen and (max-width: 1000px) {
-  .header .menu .navbar ul li .login-burger {
+  .menu .navbar ul li .login-burger {
     display: inline-block;
   }
 }
-.header .menu .navbar ul li a {
+.menu .navbar ul li a {
   font-size: 30px;
 }
 @media screen and (max-width: 1000px) {
-  .header .menu .navbar ul li {
+  .menu .navbar ul li {
     width: 100%;
     padding-top: 10px;
     margin-left: 20px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .header .menu .navbar ul {
+  .menu .navbar ul {
     padding-bottom: 10px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .header .menu .navbar {
+  .menu .navbar {
     position: absolute;
     top: 100px;
     left: 0;
@@ -107,18 +114,19 @@ body {
     display: none;
   }
 }
-.header .menu #menu {
+.menu #menu {
   display: none;
 }
-.header .menu #menu:checked ~ .navbar {
+.menu #menu:checked ~ .navbar {
   display: initial;
 }
 @media screen and (max-width: 1000px) {
-  .header .menu .btn-1 {
+  .menu .btn-1 {
     display: none;
   }
 }
-.header .header-content {
+
+.header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,110 +139,111 @@ body {
   border-radius: 30px;
 }
 @media screen and (max-width: 1200px) {
-  .header .header-content {
+  .header-content {
     width: 65%;
   }
 }
 @media screen and (max-width: 1000px) {
-  .header .header-content {
+  .header-content {
     width: 70%;
   }
 }
 @media screen and (max-width: 800px) {
-  .header .header-content {
+  .header-content {
     width: 80%;
   }
 }
 @media screen and (max-width: 420px) {
-  .header .header-content {
+  .header-content {
     width: 65%;
   }
 }
 @media screen and (max-width: 1200px) {
-  .header .header-content .header-1 h1 {
+  .header-content .header-1 h1 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .header .header-content .header-1 h1 {
+  .header-content .header-1 h1 {
     font-size: 27px;
   }
 }
 @media screen and (max-width: 800px) {
-  .header .header-content .header-1 h1 {
+  .header-content .header-1 h1 {
     font-size: 25px;
   }
 }
 @media screen and (max-width: 576px) {
-  .header .header-content .header-1 h1 {
+  .header-content .header-1 h1 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 420px) {
-  .header .header-content .header-1 h1 {
+  .header-content .header-1 h1 {
     font-size: 20px;
   }
 }
-.header .header-content .header-2 h2 {
+.header-content .header-2 h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   padding-bottom: 8px;
 }
 @media screen and (max-width: 1200px) {
-  .header .header-content .header-2 h2 {
+  .header-content .header-2 h2 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .header .header-content .header-2 h2 {
+  .header-content .header-2 h2 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 800px) {
-  .header .header-content .header-2 h2 {
+  .header-content .header-2 h2 {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 576px) {
-  .header .header-content .header-2 h2 {
+  .header-content .header-2 h2 {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 420px) {
-  .header .header-content .header-2 h2 {
+  .header-content .header-2 h2 {
     font-size: 14px;
   }
 }
-.header .header-content div a {
+.header-content div a {
   height: 10px;
   margin-top: 5px;
 }
 @media screen and (max-width: 1200px) {
-  .header .header-content div a {
+  .header-content div a {
     font-size: 28px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .header .header-content div a {
+  .header-content div a {
     font-size: 26px;
   }
 }
 @media screen and (max-width: 800px) {
-  .header .header-content div a {
+  .header-content div a {
     font-size: 25px;
   }
 }
 @media screen and (max-width: 576px) {
-  .header .header-content div a {
+  .header-content div a {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 420px) {
-  .header .header-content div a {
+  .header-content div a {
     font-size: 20px;
   }
 }
-.header .header-search {
+
+.header-search {
   display: none;
 }
 
@@ -295,6 +304,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.header-login {
+  height: 100px;
 }
 
 .movies {
