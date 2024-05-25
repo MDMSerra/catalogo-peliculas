@@ -35,6 +35,7 @@
                 </ul>
             </nav>
             <a href="assets/pages/login.html" class="btn-1 btn">Login</a>
+            <!-- <button class="button btn form-open" id="form-open">Login</button> -->
         </div>
         <!-- fin de la barra de navegación -->
 
@@ -48,7 +49,7 @@
                 <h2>Descubre cuáles son las últimas tendencias en películas</h2>
             </div>
             <div>
-                <a href="#" class="btn-2 btn">Registrarse</a>
+                <a href="assets/pages/register.html"  class="btn-2 btn">Registrarse</a>
             </div>
         </div>
         <!-- inicio de buscador de peliculas -->
@@ -63,39 +64,40 @@
     <!-- inicio del main -->
     <main>
         
-        <section class="form container">
-            <div class="form-container" id="form-container">
+        <<section class="home container">
+            <!-- a -->
+            <div class="form_container" id="form_container">
                 <i class="uil uil-times form_close"></i>
 
                 <!-- formulario de login -->
-                <div class="form login-form">
+                <div class="form login_form">
                     <form action="#">
-                        <h2>Login</h2>
+                        <h2 class="form-font">Login</h2>
 
                         <div class="input_box">
-                            <input type="email" placeholder="Ingresa tu email" required>
+                            <input class="form-font" type="email" placeholder="Ingresa tu email" required>
                             <i class="uil uil-envelope-alt email"></i>
                         </div>
 
                         <div class="input_box">
-                            <input type="password" placeholder="Ingresa tu contraseña" required>
+                            <input type="password" placeholder="Ingresa tu contraseña" class="form-font" required>
                             <i class="uil uil-lock password"></i>
                             <i class="uil uil-eye-slash pw_hide"></i>
                         </div>
 
                         <div class="option_field">
                             <span class="checkbox">
-                                <input type="checkbox" id="check">
-                                <label for="check">Recordar usuario</label>
+                                <input class="form-font" type="checkbox" id="check">
+                                <label class="form-font label" for="check">Recordar usuario</label>
                             </span>
 
-                            <a href="#" class="forgot_pw">¿Olvidaste tu contraseña?</a>
+                            <a href="#" class="forgot_pw form-font">¿Olvidaste tu contraseña?</a>
                         </div>
 
-                        <button lang="button">Iniciar Sesión</button>
-                        <div class="login_signup">
+                        <button class="button form-font" >Iniciar Sesión</button>
+                        <div class="login_signup form-font">
                             ¿No tienes una cuenta?
-                            <a href="#" id="signup">Registrarse</a>
+                            <a href="#" id="signup" class="form-font">Registrarse</a>
                         </div>
                     </form>
                 </div>
@@ -103,35 +105,35 @@
                 <!-- formulario de registro -->
                 <div class="form signup_form">
                     <form action="#">
-                        <h2>Registro</h2>
+                        <h2 class="form-font">Registro</h2>
 
                         <div class="input_box">
-                            <input type="email" placeholder="Ingresa tu email" required>
-                            <i class="uil uil-envelope-alt email"></i>
+                            <input type="email" placeholder="Ingresa tu email" class="form-font" required>
+                            <i class="uil uil-envelope-alt email "></i>
                         </div>
 
                         <div class="input_box">
-                            <input type="password" placeholder="Ingresa tu contraseña" required>
+                            <input type="password" placeholder="Ingresa tu contraseña" class="form-font" required>
                             <i class="uil uil-lock password"></i>
                             <i class="uil uil-eye-slash pw_hide"></i>
                         </div>
 
                         <div class="input_box">
-                            <input type="password" placeholder="Confirmar contraseña" required>
+                            <input type="password" placeholder="Confirmar contraseña" class="form-font" required>
                             <i class="uil uil-lock password"></i>
                             <i class="uil uil-eye-slash pw_hide"></i>
                         </div>
 
-                        <button class="button">Registrarse</button>
-                        <div class="login_signup">
+                        <button class="button form-font">Registrarse</button>
+                        <div class="login_signup form-font">
                             ¿Ya tienes una cuenta?
-                            <a href="#" id="login">Login</a>
+                            <a href="#" id="login" class="form-font">Login</a>
                         </div>
                     </form>
                 </div>
             </div>
-        </section>
-
+        </section> 
+        
         <!-- inicio del container de peliculas mas vistas -->
         <section class="movies container">
             <h2>Películas más vistas</h2>

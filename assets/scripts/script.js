@@ -1,3 +1,43 @@
+
+// asignandole comportamiento al login
+const formOpenBtn = document.querySelectorAll(".form-open"),
+    home = document.querySelector(".home");
+    formContainer = document.querySelector(".form_container"),
+    formCloseBtn = document.querySelector(".form_close"),
+    signupBtn = document.querySelector("#signup"),
+    loginBtn = document.querySelector("#login"),
+    pwShowHide = document.querySelectorAll(".pw_hide");
+
+
+    formOpenBtn.addEventListener("click", () => home.classList.add("show"));
+    formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
+
+    // cambiando el estado de contraseña a texto y el icono tambien
+    pwShowHide.forEach((icon) => {
+        icon.addEventListener("click", () =>{
+            let getPWInput = icon.parentElement.querySelector("input");
+
+            if(getPWInput.type === "password"){
+                getPWInput.type = "text";
+                icon.classList.replace("uil-eye-slash", "uil-eye");
+            }else{
+                getPWInput.type = "password";
+                icon.classList.replace("uil-eye", "uil-eye-slash");
+            }
+        });
+    });
+
+    signupBtn.addEventListener("click", (e) =>{
+        e.preventDefault();
+        formContainer.classList.add("active");
+    });
+
+    loginBtn.addEventListener("click", (e) =>{
+        e.preventDefault();
+        formContainer.classList.remove("active");
+    });
+
+// funciones para duncionalidad boton cargar mas de la seccion peliculas
 let loadMoreBtn1 = document.querySelector('#load-more-1');
 let currentItem1 = 4;
 

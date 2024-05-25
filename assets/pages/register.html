@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <title>Login de usuario</title>
+    <title>Registro de usuario</title>
 </head>
 
 <body>
@@ -33,14 +33,14 @@
     <main class="home-login container">
         <div class="form_container" id="form_container">
             
-            <!-- formulario de login -->
-            <div class="form login_form">
+            <!-- formulario de registro -->
+            <div class="form signup_form">
                 <form action="#">
-                    <h2 class="form-font">Login</h2>
+                    <h2 class="form-font">Registro</h2>
 
                     <div class="input_box">
-                        <input class="form-font" type="email" placeholder="Ingresa tu email" required>
-                        <i class="uil uil-envelope-alt email"></i>
+                        <input type="email" placeholder="Ingresa tu email" class="form-font" required>
+                        <i class="uil uil-envelope-alt email "></i>
                     </div>
 
                     <div class="input_box">
@@ -49,19 +49,16 @@
                         <i class="uil uil-eye-slash pw_hide"></i>
                     </div>
 
-                    <div class="option_field">
-                        <span class="checkbox">
-                            <input class="form-font" type="checkbox" id="check">
-                            <label class="form-font label" for="check">Recordar usuario</label>
-                        </span>
-
-                        <a href="#" class="forgot_pw form-font">¿Olvidaste tu contraseña?</a>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirmar contraseña" class="form-font" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
                     </div>
 
-                    <button class="button form-font">Iniciar Sesión</button>
+                    <button class="button form-font">Registrarse</button>
                     <div class="login_signup form-font">
-                        ¿No tienes una cuenta?
-                        <a href="register.html" id="signup" class="form-font">Registrarse</a>
+                        ¿Ya tienes una cuenta?
+                        <a href="login.html" id="login" class="form-font">Login</a>
                     </div>
                 </form>
             </div>
