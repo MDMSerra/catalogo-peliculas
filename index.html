@@ -7,6 +7,7 @@
     <meta name="description"
         content="Catálogo de películas online, en este sitio podrás ver un listado de las películas mejor valoradas">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <title>Peliculas.com</title>
 </head>
 
@@ -30,10 +31,11 @@
                     <li><a href="#">Películas</a></li>
                     <li><a href="#">Añadido recientemente</a></li>
                     <li><a href="#">Mi lista</a></li>
-                    <li><a href="#" class="login-burger">Login</a></li>
+                    <li><a href="assets/pages/login.html" class="login-burger">Login</a></li>
                 </ul>
             </nav>
-            <a href="#" class="btn-1 btn">Login</a>
+            <a href="assets/pages/login.html" class="btn-1 btn">Login</a>
+            <!-- <button class="button btn form-open" id="form-open">Login</button> -->
         </div>
         <!-- fin de la barra de navegación -->
 
@@ -47,11 +49,10 @@
                 <h2>Descubre cuáles son las últimas tendencias en películas</h2>
             </div>
             <div>
-                <a href="#" class="btn-2 btn">Registrarse</a>
+                <a href="assets/pages/register.html"  class="btn-2 btn">Registrarse</a>
             </div>
-
-            <!-- inicio de buscador de peliculas -->
         </div>
+        <!-- inicio de buscador de peliculas -->
         <div class="header-search container">
             <h2 class="search-title">¿Estás buscando alguna película?</h2>
             <input class="search__input" type="text" placeholder="Buscar...">
@@ -63,7 +64,76 @@
     <!-- inicio del main -->
     <main>
         
+        <<section class="home container">
+            <!-- a -->
+            <div class="form_container" id="form_container">
+                <i class="uil uil-times form_close"></i>
 
+                <!-- formulario de login -->
+                <div class="form login_form">
+                    <form action="#">
+                        <h2 class="form-font">Login</h2>
+
+                        <div class="input_box">
+                            <input class="form-font" type="email" placeholder="Ingresa tu email" required>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" placeholder="Ingresa tu contraseña" class="form-font" required>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <div class="option_field">
+                            <span class="checkbox">
+                                <input class="form-font" type="checkbox" id="check">
+                                <label class="form-font label" for="check">Recordar usuario</label>
+                            </span>
+
+                            <a href="#" class="forgot_pw form-font">¿Olvidaste tu contraseña?</a>
+                        </div>
+
+                        <button class="button form-font" >Iniciar Sesión</button>
+                        <div class="login_signup form-font">
+                            ¿No tienes una cuenta?
+                            <a href="#" id="signup" class="form-font">Registrarse</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- formulario de registro -->
+                <div class="form signup_form">
+                    <form action="#">
+                        <h2 class="form-font">Registro</h2>
+
+                        <div class="input_box">
+                            <input type="email" placeholder="Ingresa tu email" class="form-font" required>
+                            <i class="uil uil-envelope-alt email "></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" placeholder="Ingresa tu contraseña" class="form-font" required>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="password" placeholder="Confirmar contraseña" class="form-font" required>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <button class="button form-font">Registrarse</button>
+                        <div class="login_signup form-font">
+                            ¿Ya tienes una cuenta?
+                            <a href="#" id="login" class="form-font">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> 
+        
         <!-- inicio del container de peliculas mas vistas -->
         <section class="movies container">
             <h2>Películas más vistas</h2>
@@ -74,7 +144,7 @@
                         <img src="assets/img/1.jpg" alt="caratula película Iron Man 3">
                         <h3 class="movie-title">Iron Man 3</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -84,7 +154,7 @@
                         <img src="assets/img/2.jpg" alt="caratula película Thor Love and Thunder">
                         <h3 class="movie-title">Thor Love and Thunder</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -94,7 +164,7 @@
                         <img src="assets/img/3.jpg" alt="caratula película Thor Ragnarok">
                         <h3 class="movie-title">Thor Ragnarok</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -104,7 +174,7 @@
                         <img src="assets/img/4.jpg" alt="caratula película Resident Evil Bienvenidos a Racoon City">
                         <h3 class="movie-title">Resident Evil Bienvenidos a Racoon City</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -114,7 +184,7 @@
                         <img src="assets/img/5.jpg" alt="caratula película La vieja guardia">
                         <h3 class="movie-title">La vieja guardia</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -124,7 +194,7 @@
                         <img src="assets/img/6.jpg" alt="caratula película Spectral">
                         <h3 class="movie-title">Spectral</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -134,7 +204,7 @@
                         <img src="assets/img/7.jpg" alt="caratula película 300 Origen de un Imperio">
                         <h3 class="movie-title">300 Origen de un Imperio</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -144,7 +214,7 @@
                         <img src="assets/img/8.jpg" alt="caratula película Project Power">
                         <h3 class="movie-title">Project Power</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -162,7 +232,7 @@
                         <img src="assets/img/9.jpg" alt="caratula película Venom">
                         <h3 class="movie-title">Venom Carnage</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -172,7 +242,7 @@
                         <img src="assets/img/10.jpg" alt="caratula película Venom">
                         <h3 class="movie-title">Venom</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -182,7 +252,7 @@
                         <img src="assets/img/11.jpg" alt="caratula película Spiderman">
                         <h3 class="movie-title">Spiderman no way home</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -192,7 +262,7 @@
                         <img src="assets/img/12.jpg" alt="caratula película Avengers Infinity War">
                         <h3 class="movie-title">Avengers Infinity War</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -202,7 +272,7 @@
                         <img src="assets/img/13.jpg" alt="caratula película Avengers">
                         <h3 class="movie-title">Avengers End Game</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -212,7 +282,7 @@
                         <img src="assets/img/14.jpg" alt="caratula película Mad Max">
                         <h3 class="movie-title">Mad Max, Fury road</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -222,7 +292,7 @@
                         <img src="assets/img/15.jpg" alt="caratula película Duro de matar">
                         <h3 class="movie-title">Duro de matar 4.0</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -232,7 +302,7 @@
                         <img src="assets/img/16.jpg" alt="caratula película Duro de matar">
                         <h3 class="movie-title">Duro de matar, un buen día para morir</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -250,7 +320,7 @@
                         <img src="assets/img/17.jpg" alt="caratula película Life">
                         <h3 class="movie-title">Life</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -260,7 +330,7 @@
                         <img src="assets/img/18.jpg" alt="caratula película Morbius">
                         <h3 class="movie-title">Morbius</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -270,7 +340,7 @@
                         <img src="assets/img/19.jpg" alt="caratula película WandaVision">
                         <h3 class="movie-title">WandaVision</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -280,7 +350,7 @@
                         <img src="assets/img/20.jpg" alt="caratula película Batman">
                         <h3 class="movie-title">Batman</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -290,7 +360,7 @@
                         <img src="assets/img/21.jpg" alt="caratula película Bohemian Rhapsody">
                         <h3 class="movie-title">Bohemian Rhapsody</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -300,7 +370,7 @@
                         <img src="assets/img/22.jpg" alt="caratula película Star Wars">
                         <h3 class="movie-title">Star Wars, Rogue One</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -310,7 +380,7 @@
                         <img src="assets/img/23.jpg" alt="caratula película Black widow">
                         <h3 class="movie-title">Black Widow</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>
@@ -320,7 +390,7 @@
                         <img src="assets/img/24.jpg" alt="caratula película Black Adam">
                         <h3 class="movie-title">Black Adam</h3>
                         <p class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, veritatis.
+                            Puntuación: 9.5
                         </p>
                     </div>
                 </div>

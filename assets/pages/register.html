@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Registro de usuario</title>
+</head>
+
+<body>
+    <header class="header-login">
+        <!-- inicio de la barra de navegación -->
+        <div class="menu container">
+            <div class="logo">
+                <img src="../img/logo-2.svg" alt="Paramar logo">
+            </div>
+
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="menu-label">
+                <img src="../img/menu.png" alt="menu" class="menu-icon">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- fin del encabezado -->
+    <main class="home-login container">
+        <div class="form_container" id="form_container">
+            
+            <!-- formulario de registro -->
+            <div class="form signup_form">
+                <form action="#">
+                    <h2 class="form-font">Registro</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Ingresa tu email" class="form-font" required>
+                        <i class="uil uil-envelope-alt email "></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Ingresa tu contraseña" class="form-font" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirmar contraseña" class="form-font" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <button class="button form-font">Registrarse</button>
+                    <div class="login_signup form-font">
+                        ¿Ya tienes una cuenta?
+                        <a href="login.html" id="login" class="form-font">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/login.js"></script>
+</body>
+
+</html>
